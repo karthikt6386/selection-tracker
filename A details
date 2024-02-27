@@ -1,0 +1,53 @@
+package com.example.demo;
+
+public class LTIdetails {
+	
+	private String baseLocation;
+	private String dateOfJoining;
+	private String deliveryManager;
+	private String KDM;
+	private String IRM;
+	private String IRMps_Number;
+	
+	public LTIdetails()
+	{
+		
+	}
+	public String getBaseLocation() {
+		return baseLocation;
+	}
+	public void setBaseLocation(String baseLocation) {
+		this.baseLocation = baseLocation;
+	}
+	public String getDateOfJoining() {
+		return dateOfJoining;
+	}
+	public void setDateOfJoining(String dateOfJoining) {
+		this.dateOfJoining = dateOfJoining;
+	}
+	public String getDeliveryManager() {
+		return deliveryManager;
+	}
+	public void setDeliveryManager(String deliveryManager) {
+		this.deliveryManager = deliveryManager;
+	}
+	public String getKDM() {
+		return KDM;
+	}
+	public void setKDM(String kDM) {
+		KDM = kDM;
+	}
+	public String getIRM() {
+		return IRM;
+	}
+	public void setIRM(String iRM) {
+		IRM = iRM;
+	}
+	public String getIRMps_Number() {
+		return IRMps_Number;
+	}
+	public void setIRMps_Number(String iRMps_Number) {
+		IRMps_Number = iRMps_Number;
+	}
+
+}
