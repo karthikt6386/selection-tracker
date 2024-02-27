@@ -1,0 +1,24 @@
+package com.example.demo;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class LTIDetailsController {
+	
+	@GetMapping("/ltidetails")
+	public String showLTIDetails(Model model)
+	{
+		LTIdetails lti = new LTIdetails();
+		lti.setBaseLocation("ICC Tech park");
+		lti.setIRM("John Doe");
+		lti.setIRMps_Number("t135");
+		
+		model.addAttribute("lti", lti);
+		
+		return "ltidetails";
+		
+	}
+
+}
