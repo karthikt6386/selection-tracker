@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>LTIDetails</title>
+</head>
+<body>
+	<h1>LTI Details</h1>
+	<table>
+		<tr>
+			<th>LTI baseLocation</th>
+			<th>LTI dateOfJoining</th>
+			<th>LTI deliveryManager</th>
+			<th>LTI KDM</th>
+			<th>LTI IRM</th>
+			<th>LTI IRM ps_number</th>
+		</tr>
+		
+		<tr>
+			<td th:text = "${lti.baseLocation}"</td>
+			<td th:text = "${lti.dateOfJoining}"</td>
+			<td th:text = "${lti.deliverymanager}"</td>
+			<td th:text = "${lti.KDM}"</td>
+			<td th:text = "${lti.IRM}"</td>
+			<td th:text = "${lti.IRM ps_Number}"</td>
+		</tr>
+	</table>
+	
+	<a href = "/">Back to the Dashboard</a>	
+</body>
+</html>
